@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Dummy Section Practice
+# Dummy Homepage Practice
 
 > This repo is a microverse practice on using html and css creating a dummy section page with a navbar and with no functionality
 
