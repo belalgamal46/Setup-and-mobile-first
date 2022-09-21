@@ -4,12 +4,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 html {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+
 body {
   padding: 1rem;
   width: 327px;
@@ -47,8 +49,6 @@ body {
 }
 
 .title {
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
