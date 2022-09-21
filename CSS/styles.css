@@ -13,7 +13,7 @@ html {
 body {
   background-color: #f7f7f9;
   max-width: 100%;
-  width: 400px;
+  width: 375px;
 }
 
 /* Navbar */
@@ -30,6 +30,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .menu {
