@@ -2,7 +2,7 @@
 
 # Dummy Homepage Practice
 
-> This repo is a microverse practice on using html and css creating a dummy section page with a navbar and with no functionality
+> This is a profile page for a software engineer and microverse practice on html and css
 
 ## Built With
 
