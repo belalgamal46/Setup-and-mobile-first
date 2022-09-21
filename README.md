@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Dummy Homepage Practice
+# Profile Landing Page
 
 > This is a profile page for a software engineer and microverse practice on html and css
 
