@@ -8,18 +8,23 @@
 html {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 body {
-  padding: 1rem;
-  width: 327px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
+  background-color: #f7f7f9;
+  max-width: 100%;
+  width: 375px;
 }
 
 /* Navbar */
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+}
+
 .header {
   font-weight: 700;
   font-size: 18px;
@@ -28,90 +33,61 @@ body {
 }
 
 .menu {
-  width: 27px;
-  height: 27px;
-}
-
-#header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  width: 24px;
+  height: 24px;
 }
 
 /* Section */
-.image-container {
-  text-align: center;
+.hero-section {
+  background-image: url(../images/header-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom-left-radius: 70px;
+  background-color: white;
+  height: 62vh;
 }
 
-.image-container img {
-  width: 100%;
-}
-
-.title {
+.hero-section h1 {
+  font-size: 40px;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  line-height: 52px;
   color: #172b4d;
-  margin-bottom: 0.25rem;
-  margin-top: 12px;
+  text-align: left;
+  padding: 12px 1.5rem;
+  max-width: 327px;
 }
 
-.tags-container {
-  margin-bottom: 0.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.hero-section p {
+  padding: 0 1.5rem;
+  max-width: 327px;
 }
 
-.tag-font {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
+.connect-text {
+  padding: 12px 1.5rem;
 }
 
-.canopy {
-  color: #344563;
-}
-
-.tag-color {
-  color: #7a869a;
-}
-
-.svg {
-  margin: 12px;
-}
-
-p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  margin-bottom: 12px;
-}
-
-.dev-tags-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin-bottom: 24px;
-}
-
-.dev-tag {
-  padding: 4px 12px;
-  border-radius: 8px;
-  text-align: center;
-  background-color: #ebebff;
-  color: #6070ff;
-}
-
-#see-project-btn {
+.connect-text a {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
-  color: #396df2;
-  background-color: transparent;
-  padding: 12px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
+  color: #7f8cff;
+  text-decoration: none;
+}
+
+.social-media li {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 4px;
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 0;
 }
