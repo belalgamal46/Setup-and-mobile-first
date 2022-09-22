@@ -97,7 +97,7 @@ body {
 .works {
   display: grid;
   grid-template-rows: repeat(4, 25%);
-  grid-template-columns: 24px 327px 24px;
+  grid-template-columns: 6.4% 87.2% 6.4%;
   row-gap: 5.5rem;
   text-align: center;
 }
