@@ -37,7 +37,7 @@ body {
   height: 24px;
 }
 
-/* Section */
+/* Hero Section */
 .hero-section {
   background-image: url(../images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
@@ -47,6 +47,7 @@ body {
   height: 718px;
   max-width: 100%;
   width: 375px;
+  margin-bottom: 7.125rem;
 }
 
 .hero-section h1 {
@@ -107,4 +108,95 @@ body {
     height: 800px;
     background-size: contain;
   }
+}
+
+/* Works Section */
+.works {
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+  row-gap: 5.5rem;
+}
+.card-works {
+  background-color: white;
+  width: 327px;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.portofolio-details {
+  width: 295px;
+}
+
+.portofolio-details p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #344563;
+  width: 295px;
+}
+
+.portofolio-details h2 {
+  width: 290px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  color: #172b4d;
+}
+.frame {
+  width: 236px;
+  margin: 12px 0px;
+}
+.frame ul {
+  list-style-image: url("../images/Counter.svg");
+  display: flex;
+  column-gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.frame ul li:nth-child(1) {
+  color: #344563;
+  list-style: none;
+}
+
+.frame ul li {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.tags {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.tags ul {
+  display: flex;
+  list-style: none;
+  column-gap: 0.5rem;
+}
+
+.tag li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.portofolio-details button {
+  /* width: 100px; */
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
 }
