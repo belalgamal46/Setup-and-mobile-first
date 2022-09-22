@@ -79,6 +79,7 @@ body {
 
 .social-media li {
   text-align: center;
+
   /* padding: 0 10px; */
 }
 
@@ -116,6 +117,7 @@ body {
   grid-template-rows: repeat(4, 25%);
   row-gap: 5.5rem;
 }
+
 .card-works {
   background-color: white;
   width: 327px;
@@ -144,10 +146,12 @@ body {
   line-height: 138%;
   color: #172b4d;
 }
+
 .frame {
   width: 236px;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
+
 .frame ul {
   list-style-image: url("../images/Counter.svg");
   display: flex;
@@ -156,9 +160,15 @@ body {
   align-items: center;
 }
 
-.frame ul li:nth-child(1) {
-  color: #344563;
-  list-style: none;
+.tag li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
 }
 
 .frame ul li {
@@ -179,15 +189,9 @@ body {
   column-gap: 0.5rem;
 }
 
-.tag li {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
+.frame ul li:nth-child(1) {
+  color: #344563;
+  list-style: none;
 }
 
 .portofolio-details button {
