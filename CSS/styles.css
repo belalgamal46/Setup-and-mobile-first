@@ -5,15 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-}
-
 body {
   background-color: #f7f7f9;
-  max-width: 100%;
-  width: 375px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Navbar */
@@ -23,6 +20,8 @@ body {
   align-items: center;
   padding: 1.5rem;
   background-color: white;
+  max-width: 100%;
+  width: 375px;
 }
 
 .header {
@@ -46,6 +45,8 @@ body {
   border-bottom-left-radius: 70px;
   background-color: white;
   height: 718px;
+  max-width: 100%;
+  width: 375px;
 }
 
 .hero-section h1 {
@@ -77,7 +78,7 @@ body {
 
 .social-media li {
   text-align: center;
-  padding: 0 20px;
+  /* padding: 0 10px; */
 }
 
 .social-media ul {
@@ -85,10 +86,25 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding: 4px;
+  padding: 0 1.5rem;
+  column-gap: 20px;
 }
 
 .social-media a {
   text-decoration: none;
   padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+  #header-container {
+    max-width: 100%;
+    width: 430px;
+  }
+
+  .hero-section {
+    max-width: 100%;
+    width: 430px;
+    height: 800px;
+    background-size: contain;
+  }
 }
