@@ -115,6 +115,7 @@ body {
 .card-works:nth-child(2) {
   height: 37.25rem;
 }
+
 .card-works:last-child {
   height: 37.25rem;
 }
