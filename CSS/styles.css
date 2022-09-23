@@ -96,9 +96,10 @@ body {
 /* Works Section */
 .works {
   display: grid;
-  grid-template-rows: repeat(4, 25%);
-  grid-template-columns: 6.4% 87.2% 6.4%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 5.5rem;
+  max-width: 375px;
   text-align: center;
 }
 
@@ -110,6 +111,7 @@ body {
   height: 34.5rem;
   text-align: left;
   grid-column: 2 / 3;
+  max-width: 326px;
 }
 
 .card-works:nth-child(2) {
@@ -196,4 +198,25 @@ body {
   border-radius: 8px;
   padding: 12px;
   background-color: transparent;
+}
+
+.snapshoot-portfolio {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.snapshoot-portfolio img {
+  object-fit: cover;
+}
+
+/* ِAbout Section */
+.about {
+  background-color: white;
+  border-top-right-radius: 70px;
+  width: 375px;
+}
+
+.about .social-media ul {
+  padding: 0 24px;
 }
