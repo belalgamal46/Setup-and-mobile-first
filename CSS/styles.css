@@ -225,6 +225,7 @@ body {
   background-color: white;
   border-top-right-radius: 70px;
   width: 375px;
+  height: auto;
   padding: 0 24px;
   margin-top: 114px;
 }
