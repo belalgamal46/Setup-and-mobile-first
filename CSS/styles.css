@@ -5,15 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-}
-
 body {
   background-color: #f7f7f9;
-  max-width: 100%;
-  width: 375px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Navbar */
@@ -23,6 +20,7 @@ body {
   align-items: center;
   padding: 1.5rem;
   background-color: white;
+  width: 23.438rem;
 }
 
 .header {
@@ -38,7 +36,7 @@ body {
   height: 24px;
 }
 
-/* Section */
+/* Hero Section */
 .hero-section {
   background-image: url(../images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
@@ -46,6 +44,8 @@ body {
   border-bottom-left-radius: 70px;
   background-color: white;
   height: 718px;
+  width: 23.438rem;
+  margin-bottom: 7.125rem;
 }
 
 .hero-section h1 {
@@ -77,7 +77,6 @@ body {
 
 .social-media li {
   text-align: center;
-  padding: 0 20px;
 }
 
 .social-media ul {
@@ -85,10 +84,221 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding: 4px;
+  padding: 0 1.5rem;
+  column-gap: 20px;
 }
 
 .social-media a {
   text-decoration: none;
   padding: 0;
+}
+
+/* Works Section */
+.works {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5.5rem;
+  max-width: 375px;
+  text-align: center;
+}
+
+.card-works {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  height: 34.5rem;
+  text-align: left;
+  grid-column: 2 / 3;
+  max-width: 326px;
+}
+
+.card-works:nth-child(2) {
+  height: 37.25rem;
+}
+
+.card-works:last-child {
+  height: 37.25rem;
+}
+
+.portofolio-details {
+  max-width: 295px;
+}
+
+.portofolio-details p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #344563;
+  max-width: 295px;
+}
+
+.portofolio-details h2 {
+  max-width: 290px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  color: #172b4d;
+}
+
+.frame {
+  max-width: 236px;
+  margin: 12px 0;
+}
+
+.frame ul {
+  list-style-image: url("../images/Counter.svg");
+  display: flex;
+  column-gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tag li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.frame ul li {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.tags {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.tags ul {
+  display: flex;
+  list-style: none;
+  column-gap: 0.5rem;
+}
+
+.languages-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.frame ul li:nth-child(1) {
+  color: #344563;
+  list-style: none;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: transparent;
+}
+
+.snapshoot-portfolio {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.snapshoot-portfolio img {
+  object-fit: cover;
+}
+
+/* ِAbout Section */
+.about {
+  background-color: white;
+  border-top-right-radius: 70px;
+  width: 375px;
+  height: auto;
+  padding: 0 24px;
+  margin-top: 114px;
+}
+
+.skills-list {
+  padding: 12px;
+  padding-top: 0;
+}
+
+.about h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  width: 327px;
+  padding-top: 114px;
+  padding-bottom: 12px;
+  color: #172b4d;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-bottom: 12px;
+}
+
+.about .connect-text {
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.languages-list ul {
+  list-style: none;
+}
+
+.about .social-media ul {
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+.languages-list ul li:first-child {
+  margin-top: 12px;
+}
+
+.languages-list ul li h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  width: 215px;
+}
+
+.skills-list-style {
+  display: flex;
+  width: 327px;
+  padding: 24px 0;
+  column-gap: 15px;
+}
+
+.skills-list-style h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  width: 237px;
+}
+
+.lang:nth-child(1) {
+  padding: 0;
+}
+
+hr {
+  background-color: #dfe1e6;
+  border: none;
+  height: 1px;
 }
