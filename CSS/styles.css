@@ -189,7 +189,7 @@ body {
   list-style: none;
 }
 
-.portofolio-details button {
+.btn {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -215,8 +215,89 @@ body {
   background-color: white;
   border-top-right-radius: 70px;
   width: 375px;
+  padding: 0 24px;
+  margin-top: 114px;
+}
+
+.skills-list {
+  padding: 12px;
+  padding-top: 0;
+}
+
+.about h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  width: 327px;
+  padding-top: 114px;
+  padding-bottom: 12px;
+  color: #172b4d;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-bottom: 12px;
+}
+
+.about .connect-text {
+  padding: 0;
+  padding-bottom: 16px;
 }
 
 .about .social-media ul {
-  padding: 0 24px;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+.languages-list ul {
+  list-style: none;
+}
+
+.languages-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.languages-list ul li:first-child {
+  margin-top: 12px;
+}
+
+.languages-list ul li h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  width: 215px;
+}
+
+.skills-list-style {
+  display: flex;
+  width: 327px;
+  padding: 24px 0px;
+  column-gap: 15px;
+}
+
+.skills-list-style h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  width: 237px;
+}
+
+.lang:nth-child(1) {
+  padding: 0;
+}
+
+hr {
+  background-color: #dfe1e6;
+  border: none;
+  height: 1px;
 }
