@@ -184,6 +184,16 @@ body {
   column-gap: 0.5rem;
 }
 
+.languages-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
 .frame ul li:nth-child(1) {
   color: #344563;
   list-style: none;
@@ -247,23 +257,13 @@ body {
   padding-bottom: 16px;
 }
 
-.about .social-media ul {
-  padding: 0;
-  padding-bottom: 12px;
-}
-
 .languages-list ul {
   list-style: none;
 }
 
-.languages-list ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 12px;
+.about .social-media ul {
+  padding: 0;
+  padding-bottom: 12px;
 }
 
 .languages-list ul li:first-child {
@@ -281,7 +281,7 @@ body {
 .skills-list-style {
   display: flex;
   width: 327px;
-  padding: 24px 0px;
+  padding: 24px 0;
   column-gap: 15px;
 }
 
