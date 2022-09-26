@@ -164,6 +164,12 @@ body {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
+  float: left;
+}
+
+.tag > li {
+  margin-bottom: 12px;
+  margin-right: 8px;
 }
 
 .frame ul li {
@@ -179,9 +185,10 @@ body {
 }
 
 .tags ul {
-  display: flex;
+  /* display: flex;
   list-style: none;
-  column-gap: 0.5rem;
+  column-gap: 0.5rem; */
+  list-style: none;
 }
 
 .languages-list ul li {
