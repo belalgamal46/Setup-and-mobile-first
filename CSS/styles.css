@@ -384,3 +384,7 @@ textarea {
 .bg {
   background-color: white;
 }
+
+::placeholder {
+  color: #b3bac5;
+}
