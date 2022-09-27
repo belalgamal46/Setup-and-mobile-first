@@ -304,44 +304,21 @@
             </p>
           </div>
           <form action="https://formspree.io/f/xrgdqdyv" method="post">
-            <ul>
-              <li>
-                <label for="name"></label>
-                <input
-                  name="name"
-                  id="name"
-                  type="name"
-                  placeholder="enter name"
-                  maxlength="30"
-                  required
-                />
-              </li>
-              <li>
-                <label for="email"></label>
-                <input
-                  name="Email"
-                  id="email"
-                  type="email"
-                  placeholder="enter email"
-                  required
-                />
-              </li>
-              <li>
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                  cols="30"
-                  rows="10"
-                  maxlength="500"
-                  placeholder="write your message here"
-                  required
-                ></textarea>
-              </li>
-
-              <li>
-                <button class="form-btn" type="submit">Get It Touch</button>
-              </li>
-            </ul>
+            <div class="input-container">
+              <label for="name">
+                <input name="name" id="name" type="text" />
+              </label>
+              <label for="email">
+                <input name="Email" id="email" type="email" />
+              </label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="form-btn" type="submit">Get It Touch</button>
           </form>
         </section>
       </section>
