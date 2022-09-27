@@ -5,6 +5,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --white: #fff;
+  --black: #000;
+  --N800: #172b4d;
+  --N700: #253858;
+  --N600: #344563;
+  --N100: #7a869a;
+  --N60: #b3bac5;
+  --B500: #396df2;
+  --B400: #6070ff;
+  --B300: #7f8cff;
+  --B50: #ebebff;
+}
+
 body {
   background-color: #f7f7f9;
   display: flex;
@@ -19,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  background-color: white;
+  background-color: var(--white);
   width: 23.438rem;
 }
 
@@ -27,7 +41,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: var(--B400);
   text-decoration: none;
 }
 
@@ -42,7 +56,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   border-bottom-left-radius: 70px;
-  background-color: white;
+  background-color: var(--white);
   height: 718px;
   width: 23.438rem;
   margin-bottom: 7.125rem;
@@ -52,7 +66,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  color: #172b4d;
+  color: var(--N800);
   text-align: left;
   padding: 12px 1.5rem;
   max-width: 327px;
@@ -61,6 +75,7 @@ body {
 .hero-section p {
   padding: 0 1.5rem;
   max-width: 327px;
+  color: var(--N600);
 }
 
 .connect-text {
@@ -71,7 +86,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: var(--B300);
   text-decoration: none;
 }
 
@@ -108,7 +123,7 @@ form ul {
 }
 
 .card-works {
-  background-color: white;
+  background-color: var(--white);
   padding: 1rem;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -134,7 +149,7 @@ form ul {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  color: #344563;
+  color: var(--N600);
   max-width: 295px;
 }
 
@@ -143,7 +158,7 @@ form ul {
   font-weight: 700;
   font-size: 32px;
   line-height: 138%;
-  color: #172b4d;
+  color: var(--N800);
 }
 
 .frame {
@@ -164,8 +179,8 @@ form ul {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
-  background: #ebebff;
+  color: var(--B400);
+  background: var(--B50);
   border-radius: 8px;
   padding: 4px 12px;
 }
@@ -174,7 +189,7 @@ form ul {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: var(--N100);
 }
 
 .tags {
@@ -199,7 +214,7 @@ form ul {
 }
 
 .frame ul li:nth-child(1) {
-  color: #344563;
+  color: var(N600);
   list-style: none;
 }
 
@@ -207,8 +222,8 @@ form ul {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
-  border: 1px solid #6070ff;
+  color: var(--B500);
+  border: 1px solid var(--B400);
   border-radius: 8px;
   padding: 12px;
   background-color: transparent;
@@ -226,7 +241,7 @@ form ul {
 
 /* ِAbout Section */
 .about {
-  background-color: white;
+  background-color: var(--white);
   border-top-right-radius: 70px;
   width: 375px;
   height: auto;
@@ -246,14 +261,14 @@ form ul {
   width: 327px;
   padding-top: 114px;
   padding-bottom: 12px;
-  color: #172b4d;
+  color: var(--N800);
 }
 
 .about p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #344563;
+  color: var(--N600);
   padding-bottom: 12px;
 }
 
@@ -279,7 +294,7 @@ form ul {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #253858;
+  color: var(--N700);
   width: 215px;
 }
 
@@ -295,6 +310,7 @@ form ul {
   font-size: 20px;
   line-height: 24px;
   width: 237px;
+  color: var(--black);
 }
 
 .lang:nth-child(1) {
@@ -309,7 +325,7 @@ hr {
 
 /* Contact me Form */
 .contact-me {
-  background-color: #6070ff;
+  background-color: var(--B400);
   background-image: url(../images/contact-bg-mobile.svg);
   background-repeat: no-repeat;
   width: 375px;
@@ -344,21 +360,28 @@ form {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: white;
+  color: var(--white);
 }
 
 .text p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #ebebff;
+  color: var(--B50);
   margin-top: 12px;
   margin-bottom: 30px;
 }
 
 input {
-  width: 327px;
+  width: 100%;
   height: 48px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+textarea {
+  font-size: 15px;
+  line-height: 24px;
 }
 
 input,
@@ -366,11 +389,13 @@ textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin: 12px 0;
-  padding: 12px;
+  padding: 15px 38px 15px 16px;
+  color: var(--N800);
+  font-weight: 400;
 }
 
 .form-btn {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 8px;
   padding: 12px 16px;
   border: none;
@@ -378,19 +403,19 @@ textarea {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #6070ff;
+  color: var(--B400);
   cursor: pointer;
 }
 
 .form-btn:active {
   background-color: #2230d2;
-  color: white;
+  color: var(--white);
 }
 
 .bg {
-  background-color: white;
+  background-color: var(--white);
 }
 
 ::placeholder {
-  color: #b3bac5;
+  color: var(--N60);
 }
