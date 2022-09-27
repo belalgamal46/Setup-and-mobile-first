@@ -143,6 +143,7 @@ form ul {
 
 .portofolio-details {
   max-width: 295px;
+  margin-top: 12px;
 }
 
 .portofolio-details p {
@@ -230,13 +231,13 @@ form ul {
 }
 
 .snapshoot-portfolio {
-  width: 295px;
+  width: 79vw;
   height: 220px;
   border-radius: 8px;
 }
 
 .snapshoot-portfolio img {
-  object-fit: cover;
+  width: 78vw;
 }
 
 /* ِAbout Section */
@@ -323,7 +324,7 @@ hr {
   height: 1px;
 }
 
-/* Contact me Form */
+/* Contact me */
 .contact-me {
   background-color: var(--B400);
   background-image: url(../images/contact-bg-mobile.svg);
