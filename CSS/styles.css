@@ -79,6 +79,10 @@ body {
   text-align: center;
 }
 
+form ul {
+  list-style: none;
+}
+
 .social-media ul {
   list-style: none;
   display: flex;
@@ -321,10 +325,6 @@ form {
   padding: 0 24px;
 }
 
-form ul {
-  list-style: none;
-}
-
 #textarea {
   width: 327px;
   height: 170px;
@@ -337,7 +337,6 @@ input {
 
 input,
 textarea {
-  margin: 12px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin: 12px 0;
