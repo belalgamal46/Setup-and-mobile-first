@@ -302,3 +302,61 @@ hr {
   border: none;
   height: 1px;
 }
+
+/* Contact me */
+.contact-me {
+  background-color: #6070ff;
+  background-image: url(../images/contact-bg-mobile.svg);
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 779px;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 70px;
+}
+
+form {
+  padding: 0 24px;
+}
+
+form ul {
+  list-style: none;
+}
+
+#textarea {
+  width: 327px;
+  height: 170px;
+}
+
+input {
+  width: 327px;
+  height: 48px;
+}
+
+.text {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 103px;
+}
+
+.text h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: white;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
