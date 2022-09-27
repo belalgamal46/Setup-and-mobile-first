@@ -319,7 +319,7 @@ hr {
 
 form {
   padding: 0 24px;
-}
+  }
 
 form ul {
   list-style: none;
@@ -333,6 +333,12 @@ form ul {
 input {
   width: 327px;
   height: 48px;
+}
+
+input, textarea{
+  margin: 12px;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
 }
 
 .text {
@@ -358,5 +364,10 @@ input {
   line-height: 28px;
   color: #ebebff;
   margin-top: 12px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.form-btn{
+  display: flex;
+  
 }
