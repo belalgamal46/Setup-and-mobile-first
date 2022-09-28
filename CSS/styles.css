@@ -55,12 +55,12 @@ body {
   color: #172b4d;
   text-align: left;
   padding: 12px 1.5rem;
-  max-width: 327px;
+  width: 327px;
 }
 
 .hero-section p {
   padding: 0 1.5rem;
-  max-width: 327px;
+  width: 327px;
 }
 
 .connect-text {
@@ -393,4 +393,64 @@ textarea {
 
 ::placeholder {
   color: #b3bac5;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .hero-section,
+  #header-container {
+    width: 100%;
+  }
+
+  #header-container {
+    padding: 15px 143px;
+  }
+
+  #header-container img {
+    display: none;
+  }
+
+  .nav-items ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-items li {
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--N600);
+  }
+
+  .hero-section {
+    background-image: url(../images/desktop-bg.svg);
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section h1 {
+    width: 100%;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .hero-section p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hero-container {
+    width: 50%;
+  }
 }
