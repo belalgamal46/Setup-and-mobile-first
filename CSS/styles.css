@@ -58,6 +58,10 @@ header {
   text-decoration: none;
 }
 
+form ul {
+  list-style: none;
+}
+
 .nav-items ul {
   display: none;
 }
@@ -107,10 +111,6 @@ header {
 
 .social-media li {
   text-align: center;
-}
-
-form ul {
-  list-style: none;
 }
 
 .social-media ul {
@@ -456,6 +456,11 @@ textarea {
     padding: 2.5rem 15rem;
   }
 
+  .nav-items li a {
+    text-decoration: none;
+    color: var(--N600);
+  }
+
   #header-container a {
     padding: 1rem 1.2rem;
   }
@@ -477,11 +482,6 @@ textarea {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .nav-items li a {
-    text-decoration: none;
-    color: var(--N600);
   }
 
   .hero-section {
@@ -579,6 +579,7 @@ textarea {
   .row-reverse {
     flex-direction: row-reverse;
   }
+
   /* Contact Me */
   form {
     display: flex;
@@ -603,6 +604,7 @@ textarea {
     background-image: url("../images/desktop-bg.svg");
     background-position: center;
   }
+
   .hero-section h1 {
     font-size: 4.8rem;
     font-weight: 700;
@@ -684,7 +686,7 @@ textarea {
     margin-bottom: 2.4rem;
   }
 
-  .about-text P {
+  .about-text p {
     width: 100%;
     max-width: 447px;
   }
