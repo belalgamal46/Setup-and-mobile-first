@@ -75,10 +75,11 @@ form ul {
 .hero-section {
   background-image: url(../images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   border-bottom-left-radius: 70px;
   background-color: white;
   height: 96.4vh;
+  min-height: 626px;
   margin-bottom: 11.4rem;
 }
 
@@ -249,10 +250,9 @@ form ul {
   cursor: pointer;
 }
 
-.btn:hover {
-  background: #6070ff;
+.btn:active {
+  background: #2230d2;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
   color: #fff;
 }
 
@@ -272,8 +272,12 @@ form ul {
   border-top-right-radius: 70px;
   width: 100%;
   height: auto;
+  min-height: 1263px;
   padding: 0 2.4rem;
   margin-top: 11.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .skills-list {
@@ -281,12 +285,11 @@ form ul {
   padding-top: 0;
 }
 
-.about h1 {
+.about-text h1 {
   font-weight: 700;
   font-size: 4rem;
   line-height: 5.2rem;
   width: 100%;
-  padding-top: 11.4rem;
   padding-bottom: 1.2rem;
   color: #172b4d;
 }
@@ -358,12 +361,14 @@ hr {
   background-image: url(../images/contact-bg-mobile.svg);
   background-repeat: no-repeat;
   width: 100%;
+  height: auto;
+  min-height: 779px;
   background-position: center right;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 7rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
 }
 
 form {
@@ -723,7 +728,7 @@ textarea {
 
   /* Work Section */
   .works {
-    grid-template-columns: 1fr 3.2fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
   }
 
   .cards-container {
