@@ -501,7 +501,7 @@ textarea {
 
   .card-works:hover {
     border: 2px solid #a7aeff;
-    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transform: scale(1.008);
     z-index: 1;
   }
@@ -757,7 +757,7 @@ textarea {
 
   .card-works:hover {
     border: 2px solid #a7aeff;
-    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     transform: scale(1.008);
     z-index: 1;
   }
