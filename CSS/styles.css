@@ -796,14 +796,4 @@ textarea {
     min-width: 447px;
   }
 
-  .form-btn {
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 0.5s;
-  }
-
-  .form-btn:hover {
-    color: white;
-    background-color: #2230d2;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  }
 }
