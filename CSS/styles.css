@@ -155,6 +155,8 @@ form ul {
   border: 1px solid #dfe1e6;
   border-radius: 1.6rem;
   height: 55.2rem;
+  transition-property: border, box-shadow, transform;
+  transition-duration: 0.12s, 0.5s, 0.5s;
 }
 
 .card-works:nth-child(2),
