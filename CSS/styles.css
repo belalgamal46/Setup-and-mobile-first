@@ -250,14 +250,7 @@ form ul {
   border-radius: 0.8rem;
   padding: 1.2rem;
   background-color: transparent;
-  transition: all 0.5s ease-out;
   cursor: pointer;
-}
-
-.btn:active {
-  background: #2230d2;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
 }
 
 .snapshoot-portfolio {
@@ -496,15 +489,6 @@ textarea {
     justify-content: space-between;
     column-gap: 2.2rem;
     padding: 2.4rem;
-    transition-property: border, box-shadow, transform;
-    transition-duration: 0.12s, 0.5s, 0.5s;
-  }
-
-  .card-works:hover {
-    border: 2px solid #a7aeff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transform: scale(1.008);
-    z-index: 1;
   }
 
   .card-works:nth-child(2),
@@ -679,16 +663,6 @@ textarea {
     background-color: #f4f5f7;
   }
 
-  .btn {
-    transition: all 0.5s;
-  }
-
-  .btn:hover {
-    background: #6070ff;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-    color: #fff;
-  }
-
   .hero-section,
   #header-container {
     width: 100%;
@@ -761,18 +735,6 @@ textarea {
     row-gap: 14.2rem;
   }
 
-  .card-works {
-    transition-property: border, box-shadow, transform;
-    transition-duration: 0.12s, 0.5s, 0.5s;
-  }
-
-  .card-works:hover {
-    border: 2px solid #a7aeff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transform: scale(1.008);
-    z-index: 1;
-  }
-
   /* Contact Me */
   form {
     display: flex;
@@ -785,16 +747,5 @@ textarea {
   .input-container {
     width: 100%;
     min-width: 447px;
-  }
-
-  .form-btn {
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 0.5s;
-  }
-
-  .form-btn:hover {
-    color: white;
-    background-color: #2230d2;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 }
