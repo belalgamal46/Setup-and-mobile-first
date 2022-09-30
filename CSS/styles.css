@@ -678,6 +678,16 @@ textarea {
     background-color: #f4f5f7;
   }
 
+  .btn {
+    transition: all 0.5s;
+  }
+
+  .btn:hover {
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+  }
+
   .hero-section,
   #header-container {
     width: 100%;
