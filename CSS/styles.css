@@ -245,6 +245,15 @@ form ul {
   border-radius: 0.8rem;
   padding: 1.2rem;
   background-color: transparent;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #6070ff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
 }
 
 .snapshoot-portfolio {
@@ -438,81 +447,38 @@ textarea {
 
 /* Desktop Size */
 
-@media only screen and (min-width: 1261px) {
-  :root {
-    --Neturals-1: #091e42;
-  }
-
-  body {
-    display: initial;
-  }
-
-  .hero-section,
-  #header-container {
-    width: 100%;
-  }
-
-  #header-container {
-    padding: 2.5rem 15rem;
-  }
-
-  .nav-items li a {
-    text-decoration: none;
-    color: var(--N600);
-  }
-
-  #header-container a {
-    padding: 1rem 1.2rem;
-  }
-
-  #header-container img {
-    display: none;
-  }
-
-  .nav-items ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 0.8rem;
-  }
-
-  .nav-items li {
-    padding: 1rem 1.2rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
+@media (min-width: 768px) {
   .hero-section {
-    background-image: url(../images/desktop-bg.svg);
-    background-size: 100% 100%;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-image: url("../images/desktop-bg.svg");
+    background-position: center;
   }
 
   .hero-section h1 {
-    width: 100%;
     font-size: 4.8rem;
-    line-height: 6rem;
+    font-weight: 700;
   }
 
   .hero-section p {
-    width: 80%;
     font-size: 2rem;
-    line-height: 2.8rem;
+    font-weight: 400;
+    color: #344563;
   }
 
   .hero-container {
-    width: 50%;
+    width: 80%;
   }
 
   /* Works Section */
   .works {
-    grid-template-columns: 1fr 3.2fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
+  }
+
+  .cards-container {
+    row-gap: 14.2rem;
   }
 
   .card-works {
@@ -580,51 +546,13 @@ textarea {
     flex-direction: row-reverse;
   }
 
-  /* Contact Me */
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    text-align: center;
-  }
-
-  .input-container {
-    width: 100%;
-    min-width: 447px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("../images/desktop-bg.svg");
-    background-position: center;
-  }
-
-  .hero-section h1 {
-    font-size: 4.8rem;
-    font-weight: 700;
-  }
-
-  .hero-section p {
-    font-size: 2rem;
-    font-weight: 400;
-    color: #344563;
-  }
-
-  .hero-container {
-    width: 80%;
-  }
-
   /* About Section */
   .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 14.2rem;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2.5rem;
+
+    padding: 5% 5%;
   }
 
   .skills-list {
@@ -718,5 +646,113 @@ textarea {
   .input-container {
     width: 100%;
     min-width: 447px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --Neturals-1: #091e42;
+  }
+
+  body {
+    display: initial;
+    background-color: #e5e5e5;
+  }
+
+  .hero-section,
+  #header-container {
+    width: 100%;
+  }
+
+  #header-container {
+    padding: 2.5rem 15rem;
+  }
+
+  .nav-items li a {
+    text-decoration: none;
+    color: var(--N600);
+  }
+
+  #header-container a {
+    padding: 1rem 1.2rem;
+  }
+
+  #header-container img {
+    display: none;
+  }
+
+  .nav-items ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.8rem;
+  }
+
+  .nav-items li {
+    padding: 1rem 1.2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hero-section {
+    background-image: url(../images/desktop-bg.svg);
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section h1 {
+    width: 100%;
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+
+  .hero-section p {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .hero-container {
+    width: 50%;
+  }
+
+  /* Work Section */
+  .works {
+    grid-template-columns: 1fr 3.2fr 1fr;
+  }
+
+  .cards-container {
+    row-gap: 14.2rem;
+  }
+
+  /* Contact Me */
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+  }
+
+  .input-container {
+    width: 100%;
+    min-width: 447px;
+  }
+
+  .form-btn {
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 0.5s;
+  }
+
+  .form-btn:hover {
+    color: white;
+    background-color: #2230d2;
+    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
   }
 }
