@@ -251,7 +251,7 @@ form ul {
 
 .btn:hover {
   background: #6070ff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
@@ -538,6 +538,15 @@ textarea {
     font-weight: 400;
   }
 
+  .languages-list ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 122px;
+    width: 100%;
+    max-width: 122px;
+    max-height: 120px;
+  }
+
   .frame ul li:first-child {
     font-weight: 500;
   }
@@ -551,7 +560,6 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2.5rem;
-
     padding: 5% 5%;
   }
 
@@ -578,15 +586,6 @@ textarea {
     height: 100%;
     min-width: 414px;
     flex-direction: row;
-  }
-
-  .languages-list ul li {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 122px;
-    width: 100%;
-    max-width: 122px;
-    max-height: 120px;
   }
 
   .languages-list ul li:first-child {
@@ -753,6 +752,6 @@ textarea {
   .form-btn:hover {
     color: white;
     background-color: #2230d2;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 }
