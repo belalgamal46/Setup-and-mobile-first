@@ -1,0 +1,29 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #6070ff;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #344563;
+}
+
+.padding {
+  padding: 0 142px;
+}
+
+.h1 {
+  color: #091e42;
+}
+
+.vh-10 {
+  height: 10vh;
+}
+
+.vh-90 {
+  height: 90vh;
+}

@@ -17,33 +17,52 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#">My Logo</a>
-        <div>
-          <ul>
-            <li>
-              <a href="#works-section">Portoflio</a>
-            </li>
-            <li>
-              <a href="#about-section"> About </a>
-            </li>
-            <li>
-              <a href="#contact-me-section"> Contact </a>
-            </li>
-          </ul>
+    <header class="sticky-top bg-white v-10">
+      <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid padding">
+          <a class="navbar-brand" href="#">My Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#works-section"
+                  >Portoflio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me-section">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <img src="./images/hamburger.svg" alt="menu-icon" />
       </nav>
     </header>
     <main>
-      <section id="hero-section">
-        <div>
+      <section class="container-fluid vh-90" id="hero-section">
+        <div class="container">
           <div>
-            <h1>I’m Belal Glad to see you!</h1>
-            <p>
+            <h1 class="fw-bolder fs-1 h1 w-25">I’m Belal Glad to see you!</h1>
+            <p class="fs-5 w-75">
               I’m a software developer! I can help you build a product , feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
@@ -54,7 +73,7 @@
             <a href="#">LET’S CONNECT</a>
           </div>
           <div>
-            <ul>
+            <ul class="d-flex align-items-baseline">
               <li>
                 <a
                   href="https://twitter.com/belalgamal2016"
