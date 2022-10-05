@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-secondary">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="./CSS/bootstrap.css" />
   </head>
   <body>
-    <header class="sticky-top bg-white v-10">
-      <nav class="navbar navbar-expand-lg p-3">
-        <div class="container-fluid padding">
+    <header class="sticky-top bg-white vh-8">
+      <nav class="navbar navbar-expand-lg p-3 vh-8">
+        <div class="container-fluid padding vh-8">
           <a class="navbar-brand" href="#">My Logo</a>
           <button
             class="navbar-toggler"
@@ -37,7 +37,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-end vh-8"
             id="navbarNav"
           >
             <ul class="navbar-nav">
@@ -58,23 +58,28 @@
       </nav>
     </header>
     <main>
-      <section class="container-fluid vh-90" id="hero-section">
-        <div class="container">
+      <section
+        class="container-fluid vh-90 d-flex justify-content-center align-items-center"
+        id="hero-section"
+      >
+        <div class="container col-7">
           <div>
-            <h1 class="fw-bolder fs-1 h1 w-25">I’m Belal Glad to see you!</h1>
-            <p class="fs-5 w-75">
+            <h1 class="fw-bolder fs-1 h1 w-50">I’m Belal Glad to see you!</h1>
+            <p class="fs-5 w-75 paragraph-color">
               I’m a software developer! I can help you build a product , feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
               hestiate to contact me.
             </p>
           </div>
-          <div>
+          <div class="mb-3">
             <a href="#">LET’S CONNECT</a>
           </div>
           <div>
-            <ul class="d-flex align-items-baseline">
-              <li>
+            <ul
+              class="d-flex align-items-baseline justify-content-start list-group list-group-horizontal gap-3"
+            >
+              <li class="list-group-item border-0 p-0">
                 <a
                   href="https://twitter.com/belalgamal2016"
                   target="_blank"
@@ -83,7 +88,7 @@
                   <img src="./images/twitter.svg" alt="twitter-icon" />
                 </a>
               </li>
-              <li>
+              <li class="list-group-item border-0 p-0">
                 <a
                   href="https://www.linkedin.com/in/belal-gamal-79b8a2133/"
                   target="_blank"
@@ -92,12 +97,12 @@
                   <img src="./images/linkedin.svg" alt="linkedin-icon" />
                 </a>
               </li>
-              <li>
+              <li class="list-group-item border-0 p-0">
                 <a href="#" target="_blank" rel="noopener">
                   <img src="./images/Vector.svg" alt="vector-icon" />
                 </a>
               </li>
-              <li>
+              <li class="list-group-item border-0 p-0">
                 <a
                   href="https://github.com/belalgamal46"
                   target="_blank"
@@ -106,7 +111,7 @@
                   <img src="./images/github.svg" alt="github-icon" />
                 </a>
               </li>
-              <li>
+              <li class="list-group-item border-0 p-0">
                 <a href="#" target="_blank">
                   <img src="./images/handVector.svg" alt="hand-vector-icon" />
                 </a>

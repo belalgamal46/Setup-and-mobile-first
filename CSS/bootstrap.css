@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
 .navbar-brand {
   font-weight: 700;
   color: #6070ff;
@@ -20,10 +24,22 @@
   color: #091e42;
 }
 
-.vh-10 {
-  height: 10vh;
+.vh-8 {
+  height: 8vh;
 }
 
 .vh-90 {
-  height: 90vh;
+  height: 92vh;
+}
+
+.paragraph-color {
+  color: #344563;
+}
+
+#hero-section {
+  background-image: url(../images/desktop-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  border-bottom-left-radius: 100px;
+  background-color: white;
 }
