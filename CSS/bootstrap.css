@@ -39,7 +39,93 @@ body {
 #hero-section {
   background-image: url(../images/desktop-bg.svg);
   background-repeat: no-repeat;
-  background-size: 100% 90%;
+  background-size: 100% 96%;
   border-bottom-left-radius: 100px;
   background-color: white;
+}
+
+.flex-gap {
+  row-gap: 142px;
+}
+
+.rounded-4 {
+  border-radius: 24px;
+}
+
+.mt-6 {
+  margin-top: 142px;
+  margin-bottom: 142px;
+}
+
+.color-091E42 {
+  color: #091e42;
+}
+
+.color-344563 {
+  color: #344563;
+}
+
+.color-6B778C {
+  color: #6b778c;
+}
+
+.color-6070FF {
+  color: #6070ff;
+}
+
+.bg-light-blue {
+  background-color: #ebebff;
+}
+
+.border-radius {
+  border-top-right-radius: 8px;
+}
+
+#about-section {
+  border-top-right-radius: 100px;
+}
+
+.w-15 {
+  width: 13.5%;
+}
+
+.w-35 {
+  width: 35%;
+}
+.h-more {
+  height: 120px;
+}
+
+.background-color-6070FF {
+  background-color: #6070ff;
+}
+
+.white {
+  color: white;
+}
+
+.contact-me {
+  background-image: url("../images/desktop-contact-me-be.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%;
+  border-top-left-radius: 100px;
+}
+
+.form-btn {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6070ff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.form-btn:hover {
+  background-color: #2230d2;
+  color: white;
 }
