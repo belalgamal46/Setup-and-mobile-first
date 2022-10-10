@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -98,6 +98,7 @@ form ul {
   right: 0;
   padding: 1.2rem;
   backdrop-filter: blur(6px);
+  display: none;
 }
 
 .nav-links {
@@ -507,7 +508,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("../images/desktop-bg.svg");
+    background-image: url('../images/desktop-bg.svg');
     background-position: center;
   }
 
@@ -686,7 +687,7 @@ textarea {
   }
 
   .contact-me {
-    background-image: url("../images/desktop-contact-me-be.svg");
+    background-image: url('../images/desktop-contact-me-be.svg');
     background-size: contain;
     background-position: 70% 70%;
   }
@@ -734,6 +735,9 @@ textarea {
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
     color: #fff;
   }
+  .menu-container {
+    display: none;
+  }
 
   .hero-section,
   #header-container {
@@ -753,7 +757,7 @@ textarea {
     padding: 1rem 1.2rem;
   }
 
-  #header-container img {
+  #header-container button {
     display: none;
   }
 
