@@ -84,9 +84,11 @@ form ul {
   background-color: transparent;
   border: none;
 }
+
 #menu-btn:active {
-  background-color: #F6F6FF;
+  background-color: #f6f6ff;
 }
+
 .menu-container {
   background-color: rgba(0, 26, 255, 0.6);
   width: 100%;
@@ -97,10 +99,12 @@ form ul {
   padding: 1.2rem;
   backdrop-filter: blur(6px);
 }
+
 .nav-links {
   display: flex;
   flex-direction: column;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -109,6 +113,7 @@ form ul {
   line-height: 4.4rem;
   padding: 1.6rem;
 }
+
 .image-container {
   text-align: right;
   padding: 2.8rem;
