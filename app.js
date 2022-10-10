@@ -14,7 +14,7 @@ const openMenu = () => {
 };
 
 const closeMenu = () => {
-  if (toggleNav === true || window.innerWidth > 1024) {
+  if (toggleNav === true) {
     menuContainer.style.display = ' none';
     body.style.overflow = 'initial';
     toggleNav = false;
