@@ -1,24 +1,17 @@
 const { body } = document;
-let toggleNav = false;
 const menuBtn = document.querySelector('#menu-btn');
 const menuContainer = document.querySelector('.menu-container');
 const closeBtn = document.querySelector('.image-container');
 const navLinks = document.querySelector('.nav-links').childNodes;
 
 const openMenu = () => {
-  if (toggleNav === false) {
-    menuContainer.style.display = 'block';
-    body.style.overflow = 'hidden';
-    toggleNav = true;
-  }
+  menuContainer.style.transform = 'translateX(0)';
+  body.style.overflow = 'hidden';
 };
 
 const closeMenu = () => {
-  if (toggleNav === true) {
-    menuContainer.style.display = ' none';
-    body.style.overflow = 'initial';
-    toggleNav = false;
-  }
+  menuContainer.style.transform = 'translateX(-100%)';
+  body.style.overflow = 'initial';
 };
 
 menuBtn.addEventListener('click', openMenu);

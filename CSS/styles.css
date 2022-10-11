@@ -98,7 +98,8 @@ form ul {
   right: 0;
   padding: 1.2rem;
   backdrop-filter: blur(6px);
-  display: none;
+  transform: translateX(-100%);
+  transition: all 0.5s;
 }
 
 .nav-links {
