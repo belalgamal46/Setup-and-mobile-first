@@ -8,6 +8,8 @@ const data = [
       { name: 'javascript', shouldShowOnMobile: true },
       { name: 'Ruby on rails', shouldShowOnMobile: false },
     ],
+    seeLive: '',
+    seeSource: '',
     mobile: {
       image: './images/tonic.jpg',
       alt: 'mobile-tonic-image',
