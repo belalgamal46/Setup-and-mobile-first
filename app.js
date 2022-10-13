@@ -206,16 +206,179 @@ const createCardsContainer = (articleData) => {
   });
 };
 
+const createPopupTitleContainer = (item) => {
+  const title = createElement({ tagName: 'h2', text: item.name });
+  const image = createElement({
+    tagName: 'div',
+    text: '<img src="./images/popup-icon.svg" alt="popup-close-icon" class="close-button" />',
+  });
+
+  return createElement({
+    tagName: 'div',
+    classList: ['title-container'],
+    children: [title, image],
+  });
+};
+
+const createPopupProjectTitleContainer = (item) => {
+  const titleContainer = createPopupTitleContainer(item);
+  const frames = createFrames(item.desktop.frame);
+  return createElement({
+    tagName: 'div',
+    classList: ['project-title-container'],
+    children: [titleContainer, frames],
+  });
+};
+
+const createPopupProjectImage = (item) => {
+  const image = createElement({
+    tagName: 'img',
+    attributes: { src: item.desktop.image, alt: item.desktop.alt },
+  });
+  return createElement({
+    tagName: 'div',
+    classList: ['project-image'],
+    children: [image],
+  });
+};
+
+const createPopupText = (item) => {
+  const paragraph = createElement({
+    tagName: 'p',
+    text: item.desktop.description,
+  });
+  return createElement({
+    tagName: 'div',
+    classList: ['project-text'],
+    children: [paragraph],
+  });
+};
+
+const createPopuoButtons = () => {
+  const seeLive = createElement({
+    tagName: 'button',
+    text: 'See live <img src="./images/seeLive.svg" alt="button-icon" />',
+  });
+
+  const seeSource = createElement({
+    tagName: 'button',
+    text: 'See Source <img src="./images/Frame.svg" alt="button-icon" />',
+  });
+
+  return createElement({
+    tagName: 'div',
+    classList: ['buttons'],
+    children: [seeLive, seeSource],
+  });
+};
+
+const createPopupProjectDescription = (item) => {
+  const descriptionText = createPopupText(item);
+
+  const tags = createTags(item.tags);
+  const buttons = createPopuoButtons();
+  const popupTagsAndButtons = createElement({
+    tagName: 'div',
+    classList: ['popup-tags'],
+    children: [tags, buttons],
+  });
+  return createElement({
+    tagName: 'div',
+    classList: ['project-description'],
+    children: [descriptionText, popupTagsAndButtons],
+  });
+};
+
+const createPopupArticle = (item) => {
+  const popupTitleContainer = createPopupProjectTitleContainer(item);
+  const popupImageContainer = createPopupProjectImage(item);
+  const popupDescriptionContainer = createPopupProjectDescription(item);
+  return createElement({
+    tagName: 'article',
+    children: [
+      popupTitleContainer,
+      popupImageContainer,
+      popupDescriptionContainer,
+    ],
+    classList: ['hide'],
+    attributes: { 'data-article-id': item.id },
+  });
+};
+
+const createPopupContainer = (data) => {
+  const popupContainerChildren = [];
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const item of data) {
+    const article = createPopupArticle(item);
+
+    popupContainerChildren.push(article);
+  }
+
+  return createElement({
+    tagName: 'div',
+    classList: ['popup-container'],
+    children: popupContainerChildren,
+  });
+};
+
 const createWorksSection = (data) => {
   const cardsContainer = createCardsContainer(data);
+  const popupContainer = createPopupContainer(data);
 
+  const overlay = createElement({
+    tagName: 'div',
+    attributes: { id: 'overlay' },
+  });
   const worksSection = createElement({
     tagName: 'section',
     classList: ['works'],
     attributes: { id: 'works-section' },
-    children: [cardsContainer],
+    children: [cardsContainer, overlay, popupContainer],
   });
   heroSection.after(worksSection);
 };
 
 createWorksSection(data);
+
+const seeProject = document.querySelectorAll('.btn');
+const overlay = document.querySelector('#overlay');
+const popupContainer = document.querySelector('.popup-container');
+let selectedPopupArticle = null;
+
+// eslint-disable-next-line operator-linebreak
+const popupCloseButton = document.querySelectorAll('.close-button');
+
+const openPopup = (event) => {
+  overlay.style.transform = 'translateX(0)';
+  popupContainer.style.transform = 'translateX(0)';
+  popupContainer.style.opacity = 1;
+  body.style.overflowY = 'hidden';
+
+  const articleId = event.target.id;
+  selectedPopupArticle = document.querySelector(
+    // eslint-disable-next-line comma-dangle
+    `[data-article-id='${articleId}']`
+  );
+
+  selectedPopupArticle.classList.remove('hide');
+};
+
+const closePopup = () => {
+  overlay.style.transform = 'translateX(-500%)';
+  popupContainer.style.transform = 'translateX(-500%)';
+  popupContainer.style.opacity = 0;
+  body.style.overflowY = 'initial';
+  selectedPopupArticle.classList.add('hide');
+  selectedPopupArticle = null;
+};
+
+popupCloseButton.forEach((button) => {
+  button.addEventListener('click', closePopup);
+});
+
+seeProject.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    openPopup(event);
+  });
+});

@@ -45,7 +45,7 @@ header {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.04);
 }
 
-/* Navbar */
+/* --------------- Navbar -------------------- */
 #header-container {
   display: flex;
   justify-content: space-between;
@@ -121,7 +121,7 @@ form ul {
   padding: 2.8rem;
 }
 
-/* Hero Section */
+/* --------------- Hero Section -------------------- */
 .hero-section {
   background-image: url(../images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ form ul {
   padding: 0;
 }
 
-/* Works Section */
+/* --------------- Works Section -------------------- */
 .works {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
@@ -200,14 +200,9 @@ form ul {
   padding: 1.6rem;
   border: 1px solid #dfe1e6;
   border-radius: 1.6rem;
-  height: 55.2rem;
+  height: auto;
   transition-property: border, box-shadow, transform;
   transition-duration: 0.12s, 0.5s, 0.5s;
-}
-
-.card-works:nth-child(2),
-.card-works:last-child {
-  height: 596px;
 }
 
 .portofolio-details {
@@ -289,6 +284,10 @@ form ul {
   color: #344563;
 }
 
+.btn-container {
+  padding: 1.5rem 0;
+}
+
 .btn {
   font-weight: 500;
   font-size: 1.7rem;
@@ -318,7 +317,7 @@ form ul {
   display: none;
 }
 
-/* ِAbout Section */
+/* --------------- About Section -------------------- */
 .about {
   background-color: white;
   border-top-right-radius: 70px;
@@ -406,7 +405,7 @@ hr {
   height: 1px;
 }
 
-/* Contact me Form */
+/* --------------- Contact Me Section -------------------- */
 .contact-me {
   background-color: #6070ff;
   background-image: url(../images/contact-bg-mobile.svg);
@@ -486,6 +485,7 @@ textarea {
   line-height: 2.4rem;
   color: #6070ff;
   cursor: pointer;
+  /* flex-grow: 1; */
 }
 
 .form-btn:active {
@@ -500,9 +500,135 @@ textarea {
 ::placeholder {
   color: #b3bac5;
 }
+/* --------------- Form Validation -------------------- */
+.validate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* Desktop Size */
+.validate {
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  padding: 0.7rem;
+  color: red;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  transform: translateX(500%);
+}
 
+/* --------------- Popup Section -------------------- */
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(106, 110, 117, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  backdrop-filter: blur(5px);
+  transform: translateX(-100%);
+}
+.popup-container {
+  position: fixed;
+  width: 95%;
+  /* height: 85%; */
+  padding: 1.8rem 1.6rem;
+  margin: auto;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  z-index: 300;
+  opacity: 0;
+  transform: translateX(200%);
+  transition: opacity 1s;
+  overflow: scroll;
+}
+
+.project-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title-container img {
+  padding: 1.4rem;
+}
+
+.project-title-container h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+}
+
+.project-title-container img {
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.project-description {
+  margin-bottom: 4.2rem;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-text p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #344563;
+}
+.buttons {
+  display: flex;
+  column-gap: 1.2rem;
+}
+.buttons button {
+  width: 100%;
+  padding: 1.4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.buttons button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+/* --------------- Tablets Media Query -------------------- */
 @media (min-width: 768px) {
   .hero-section {
     display: flex;
@@ -717,6 +843,7 @@ textarea {
   }
 }
 
+/* --------------- Desktop Media Query -------------------- */
 @media (min-width: 1024px) {
   :root {
     --Neturals-1: #091e42;
@@ -741,6 +868,7 @@ textarea {
     display: none;
   }
 
+  /* --------------- Hero Section -------------------- */
   .hero-section,
   #header-container {
     width: 100%;
@@ -804,7 +932,7 @@ textarea {
     width: 50%;
   }
 
-  /* Work Section */
+  /* --------------- Works Section -------------------- */
   .works {
     grid-template-columns: 1fr auto 1fr;
   }
@@ -825,7 +953,7 @@ textarea {
     z-index: 1;
   }
 
-  /* Contact Me */
+  /* --------------- Contact Me Section -------------------- */
   form {
     display: flex;
     justify-content: center;
@@ -848,5 +976,60 @@ textarea {
     color: white;
     background-color: #2230d2;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  /* --------------- Popup Section -------------------- */
+
+  .project-title-container {
+    align-items: flex-start;
+  }
+
+  .project-title-container h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .project-title-container img {
+    cursor: pointer;
+    align-self: flex-start;
+  }
+
+  .project-image {
+    height: 58.6rem;
+    margin-bottom: 5.9rem;
+  }
+  .project-image img {
+    object-fit: cover;
+    height: 58.6rem;
+  }
+
+  .project-description {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .project-text {
+    flex-grow: 1;
+  }
+
+  .popup-tags {
+    flex-grow: 1;
+  }
+
+  .project-text {
+    width: 70%;
+  }
+  .project-text p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .buttons button:hover {
+    background: #6070ff;
+    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    color: white;
   }
 }
