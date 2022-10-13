@@ -485,6 +485,7 @@ textarea {
   line-height: 2.4rem;
   color: #6070ff;
   cursor: pointer;
+
   /* flex-grow: 1; */
 }
 
@@ -515,6 +516,7 @@ textarea {
   backdrop-filter: blur(5px);
   transform: translateX(-100%);
 }
+
 .popup-container {
   position: fixed;
   width: 95%;
@@ -527,7 +529,7 @@ textarea {
   right: 0;
   left: 0;
   border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
   z-index: 300;
   opacity: 0;
@@ -576,10 +578,12 @@ textarea {
   line-height: 2.4rem;
   color: #344563;
 }
+
 .buttons {
   display: flex;
   column-gap: 1.2rem;
 }
+
 .buttons button {
   width: 100%;
   padding: 1.4rem 0;
@@ -851,6 +855,12 @@ textarea {
     width: 100%;
   }
 
+  .buttons button:hover {
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: white;
+  }
+
   #header-container {
     padding: 2.5rem 15rem;
   }
@@ -977,6 +987,7 @@ textarea {
     height: 58.6rem;
     margin-bottom: 5.9rem;
   }
+
   .project-image img {
     object-fit: cover;
     height: 58.6rem;
@@ -991,22 +1002,15 @@ textarea {
 
   .project-text {
     flex-grow: 1;
+    width: 70%;
   }
 
   .popup-tags {
     flex-grow: 1;
   }
 
-  .project-text {
-    width: 70%;
-  }
   .project-text p {
     font-size: 16px;
     line-height: 30px;
-  }
-  .buttons button:hover {
-    background: #6070ff;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
-    color: white;
   }
 }
