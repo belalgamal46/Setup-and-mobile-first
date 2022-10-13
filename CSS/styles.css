@@ -500,25 +500,6 @@ textarea {
 ::placeholder {
   color: #b3bac5;
 }
-/* --------------- Form Validation -------------------- */
-.validate-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.validate {
-  background-color: white;
-  width: 50%;
-  text-align: center;
-  padding: 0.7rem;
-  color: red;
-  border-radius: 0.8rem;
-  font-weight: 500;
-  font-size: 1rem;
-  text-align: left;
-  transform: translateX(500%);
-}
 
 /* --------------- Popup Section -------------------- */
 #overlay {
@@ -537,7 +518,7 @@ textarea {
 .popup-container {
   position: fixed;
   width: 95%;
-  /* height: 85%; */
+  height: 90%;
   padding: 1.8rem 1.6rem;
   margin: auto;
   background-color: white;
@@ -583,10 +564,6 @@ textarea {
 .project-title-container img {
   cursor: pointer;
   align-self: flex-start;
-}
-
-.project-description {
-  margin-bottom: 4.2rem;
 }
 
 .project-image img {
