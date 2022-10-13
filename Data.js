@@ -48,6 +48,8 @@ const data = [
       { name: 'javascript', shouldShowOnMobile: true },
       { name: 'Ruby on rails', shouldShowOnMobile: false },
     ],
+    seeLive: '',
+    seeSource: '',
     mobile: {
       image: './images/Multi-Post-Stories.jpg',
       alt: 'mobile-multi-post-stories-image',
@@ -87,6 +89,8 @@ const data = [
       { name: 'javascript', shouldShowOnMobile: true },
       { name: 'Ruby on rails', shouldShowOnMobile: false },
     ],
+    seeLive: '',
+    seeSource: '',
     mobile: {
       image: './images/tonic2.jpg',
       alt: 'mobile-tonic-2-image',
@@ -125,6 +129,8 @@ const data = [
       { name: 'javascript', shouldShowOnMobile: true },
       { name: 'Ruby on rails', shouldShowOnMobile: false },
     ],
+    seeLive: '',
+    seeSource: '',
     mobile: {
       image: './images/Multi-Post-Stories2.jpg',
       alt: 'mobile-multi-post-stories-2-image',
