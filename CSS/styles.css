@@ -501,6 +501,7 @@ textarea {
 ::placeholder {
   color: #b3bac5;
 }
+
 /* --------------- Form Validation -------------------- */
 .validate-container {
   display: flex;
@@ -511,7 +512,6 @@ textarea {
 .validate {
   background-color: white;
   width: 50%;
-  text-align: center;
   padding: 0.7rem;
   color: red;
   border-radius: 0.8rem;
