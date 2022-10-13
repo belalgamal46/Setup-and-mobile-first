@@ -502,6 +502,25 @@ textarea {
   color: #b3bac5;
 }
 
+/* --------------- Form Validation -------------------- */
+.validate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.validate {
+  background-color: white;
+  width: 50%;
+  padding: 0.7rem;
+  color: red;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  transform: translateX(500%);
+}
+
 /* --------------- Popup Section -------------------- */
 #overlay {
   width: 100%;

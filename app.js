@@ -6,6 +6,11 @@ const menuContainer = document.querySelector('.menu-container');
 const closeBtn = document.querySelector('.image-container');
 const navLinks = document.querySelector('.nav-links').childNodes;
 const heroSection = document.querySelector('.hero-section');
+const form = document.querySelector('form');
+const validateMessage = document.querySelector('.validate');
+const emailInput = document.querySelector('#email');
+const textArea = document.querySelector('#textarea');
+const nameInput = document.querySelector('#name');
 
 const openMenu = () => {
   menuContainer.style.transform = 'translateX(0)';
@@ -21,6 +26,23 @@ menuBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 navLinks.forEach((link) => {
   link.addEventListener('click', closeMenu);
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (emailInput.value.toLowerCase() === emailInput.value) {
+    form.submit();
+    validateMessage.style.transform = 'translateX(500%)';
+    emailInput.value = '';
+    textArea.value = '';
+    nameInput.value = '';
+    emailInput.style.border = '';
+  } else {
+    validateMessage.style.transform = 'translateX(0)';
+    emailInput.value = '';
+    emailInput.style.border = '2px solid red';
+  }
 });
 
 const addClassesToElement = ({ element, classList }) => {
