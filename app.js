@@ -9,8 +9,24 @@ const heroSection = document.querySelector('.hero-section');
 const form = document.querySelector('form');
 const validateMessage = document.querySelector('.validate');
 const emailInput = document.querySelector('#email');
-const textArea = document.querySelector('#textarea');
+const textAreaInput = document.querySelector('#textarea');
 const nameInput = document.querySelector('#name');
+
+const formInputs = {
+  nameInput,
+  emailInput,
+  textAreaInput,
+};
+
+Object.values(formInputs).forEach((input) => {
+  input.addEventListener('input', (event) => {
+    localStorage.setItem(event.target.name, JSON.stringify(event.target.value));
+  });
+});
+
+nameInput.value = JSON.parse(localStorage.getItem(nameInput.name));
+emailInput.value = JSON.parse(localStorage.getItem(emailInput.name));
+textAreaInput.value = JSON.parse(localStorage.getItem(textAreaInput.name));
 
 const openMenu = () => {
   menuContainer.style.transform = 'translateX(0)';
@@ -34,9 +50,6 @@ form.addEventListener('submit', (event) => {
   if (emailInput.value.toLowerCase() === emailInput.value) {
     form.submit();
     validateMessage.style.transform = 'translateX(500%)';
-    emailInput.value = '';
-    textArea.value = '';
-    nameInput.value = '';
     emailInput.style.border = '';
   } else {
     validateMessage.style.transform = 'translateX(0)';
