@@ -11,6 +11,7 @@
 - git
 - webhint
 - stylelint
+- Bootstrap
 
 ## Live Demo
 
